@@ -13,8 +13,9 @@ const CustomTextInput = ({value, onChangeText, placeholder, icon, type,keyboardT
           onChangeText(txt);
         }}
         placeholder={placeholder}
-        style={{marginLeft: 10}}
+        style={styles.textInput}
         secureTextEntry={type ? true : false}
+        placeholderTextColor="#000"
       />
     </View>
   );
@@ -32,11 +33,16 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20,
     flexDirection: 'row',
+    color:'black',
   },
   img: {
     width: 30,
     height: 30,
   },
+  textInput:{
+    marginLeft: 10,
+    color:'black',
+  }
 });
 
 export default CustomTextInput;

@@ -1,4 +1,4 @@
-import { createStoreHook } from 'react-redux';
+import { createStore } from 'redux';
 import {Reducers} from '../reducers/Reducers';
 import {Reducers2} from '../reducers/Reducers2';
 import {AddressReducers} from '../reducers/AddressReducers';
@@ -10,7 +10,7 @@ const routeReducer = combineReducers({
   AddressReducers,
   OrderReducers,
 });
-export const store = createStoreHook(routeReducer);
+export const store = createStore(routeReducer);
 
 // import { Reducers } from "../reducers/Reducers";
 // import { createStoreHook } from "react-redux";
